@@ -18,5 +18,5 @@ def password_generator(size: int = 8) -> str:
 
 
 print(password_generator(10))
-password_generator_8 = partial(password_generator, size=10)
+password_generator_8 = partial(password_generator, size=8)
 print(password_generator_8())
