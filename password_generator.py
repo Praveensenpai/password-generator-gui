@@ -2,7 +2,7 @@ import random
 import string
 
 
-def password_generator(size=8, special_chars=True, digits=True):
+def password_generator(size: int = 8, special_chars: bool = True, digits: bool = True):
     """Generate a random password string of the specified size.
 
     Args:

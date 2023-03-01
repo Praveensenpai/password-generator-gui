@@ -1,36 +1,31 @@
+# Password Generator App
 
-# Password Generator
+This is a simple password generator app that allows users to generate a password with customizable options such as password length and the inclusion of special characters and digits. The generated password can be copied to the clipboard with the click of a button.
 
-This is a simple command-line based password generator written in Python. It can be used to generate a secure, random password with varying length and character sets.
-
-
-## Requirements
+## Installation
 
 ```javascript
 Python 3.6+
 ```
 
+To use this app, you need to have Python 3 installed on your computer. You can download it from the official Python website: https://www.python.org/downloads/
+
+You also need to install the flet and clipboard modules, which can be installed via pip:
+
+```javascript
+pip install -r requirements.txt
+```
 
 ## Usage
 
-The password generator is run by executing the password_generator.py file. The generated password will have a default length of 8 characters and include lowercase, uppercase, digits and punctuation characters. To generate a password with different length, or custom character set, provide the necessary parameters to the password_generator function.
+run the following command:
 
-
-## Parameters
-
-- size (int): The length of the generated password (default: 8)
-
-- special_chars (boolean):Whether to include special characters in the generated password (default: True)
-
-- digits (boolean): Whether to include digits in the generated password (default: True)
-
-
-
-## Example
-```py
-password_generator()  # Generates an 8-character long password with lowercase, uppercase, digits and punctuation characters
-password_generator(10, special_chars=True, digits=True)  # Generates a 10-character long password with the same characters
-password_generator(size=8, special_chars=False, digits=True)  # Generates an 8-character long password with only lowercase, uppercase and digits
-
+```javascript
+python main.py
 ```
 
+The app will open in a new window, and you can start generating passwords by selecting the desired options and clicking the "Generate" button. You can copy the generated password to your clipboard by clicking the "Copy" button.
+
+## Contributing
+
+If you'd like to contribute to this project, you can submit a pull request on GitHub: https://github.com/Praveensenpai/password-generator
