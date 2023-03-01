@@ -15,6 +15,10 @@ def main(page: ft.Page):
     def copy_clicked(e):
         clipboard.copy(new_task.value)
 
+    def clear_clicked(e):
+        new_task.value = ""
+        page.update()
+
     new_task = ft.TextField(
         hint_text="Generated password",
         width=300,
@@ -27,10 +31,12 @@ def main(page: ft.Page):
                 new_task,
                 ft.ElevatedButton("Generate", on_click=generate_clicked),
                 ft.ElevatedButton("Copy", on_click=copy_clicked),
+                ft.ElevatedButton("Clear", on_click=clear_clicked),
             ],
             alignment=ft.MainAxisAlignment.CENTER,
         )
     )
+
     special_characters = ft.Switch(label="Specials")
     digit_characters = ft.Switch(label="Digits")
     characters_size = ft.TextField(width=60, height=60, value=12)
