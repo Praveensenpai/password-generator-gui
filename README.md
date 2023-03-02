@@ -32,4 +32,4 @@ The app will open in a new window, and you can start generating passwords by sel
 
 ## Contributing
 
-If you'd like to contribute to this project, you can submit a pull request on GitHub: https://github.com/Praveensenpai/password-generator
+If you'd like to contribute to this project, you can submit a pull request on GitHub: https://github.com/Praveensenpai/password-generator-gui
